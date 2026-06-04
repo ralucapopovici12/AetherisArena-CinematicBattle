@@ -568,7 +568,7 @@
             logMessage("Synchronization establishing...", "primary-container");
 
             try {
-                const response = await fetch(APP_URL + '/api/battle/simulate');
+                const response = await fetch('/api/battle/simulate');
                 if (!response.ok) throw new Error('API failure');
                 const data = await response.json();
 
