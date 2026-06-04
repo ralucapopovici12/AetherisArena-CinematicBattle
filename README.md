@@ -1,5 +1,7 @@
 # ⚔️ AETHERIS ARENA | Cinematic Battle Simulator
 
+## https://aetherisarena-cinematicbattle.onrender.com
+
 O aplicație web modernă și premium dezvoltată în **PHP 8.x** folosind framework-ul **Laravel**, construită pe baza unei arhitecturi curate cu **Domain-Driven Design (DDD)**. Aceasta simulează o luptă legendară între **Kratos** și un **Monstru Sălbatic (Hydra/Wild Entity)**, oferind un visualizer cinematic de impact pe frontend și o salvare persistentă a istoricului pe backend (SQLite).
 
 ---
