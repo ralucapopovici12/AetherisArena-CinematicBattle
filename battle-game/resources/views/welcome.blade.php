@@ -296,12 +296,12 @@
             <!-- Kratos Combatant -->
             <div class="flex-1 flex justify-center relative group" id="hero-card-container">
                 <!-- Floating Health Bar Hero -->
-                <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 space-y-2 z-40">
+                <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-64 space-y-2 z-40">
                     <div class="flex justify-between items-end font-label-caps text-[10px] text-primary-container">
                         <span class="tracking-widest">VITALITY</span>
                         <span class="font-bold" id="hero-health-val">152 / 152</span>
                     </div>
-                    <div class="h-2 bg-black/40 rounded-full overflow-hidden border border-white/10">
+                    <div class="h-3.5 bg-black/40 rounded-full overflow-hidden border border-white/10">
                         <div class="h-full bg-gradient-to-r from-primary-container to-amber-600 health-bar-transition shadow-[0_0_10px_rgba(255,191,0,0.5)]" id="hero-health-bar" style="width: 100%;"></div>
                     </div>
                 </div>
@@ -372,12 +372,12 @@
             <!-- Monster Combatant -->
             <div class="flex-1 flex justify-center relative group" id="monster-card-container">
                 <!-- Floating Health Bar Monster -->
-                <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 space-y-2 z-40">
+                <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-64 space-y-2 z-40">
                     <div class="flex justify-between items-end font-label-caps text-[10px] text-secondary-container">
                         <span class="tracking-widest">ESSENCE</span>
                         <span class="font-bold" id="monster-health-val">146 / 146</span>
                     </div>
-                    <div class="h-2 bg-black/40 rounded-full overflow-hidden border border-white/10">
+                    <div class="h-3.5 bg-black/40 rounded-full overflow-hidden border border-white/10">
                         <div class="h-full bg-gradient-to-r from-secondary-container to-green-800 health-bar-transition shadow-[0_0_10px_rgba(47,248,1,0.5)]" id="monster-health-bar" style="width: 100%;"></div>
                     </div>
                 </div>
