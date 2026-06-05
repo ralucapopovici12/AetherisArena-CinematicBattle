@@ -1,5 +1,5 @@
 <?php
-
+//Are rolul de a configura si asambla aplicatia (rute, middleware-uri si erori) inainte de a o porni efectiv prin metoda create()
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;

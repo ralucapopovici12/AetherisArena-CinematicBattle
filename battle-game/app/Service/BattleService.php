@@ -140,7 +140,7 @@ class BattleService implements BattleServiceInterface
                 continue;
             }
 
-            // Calculam damage-ul brut: strength atacator minus defence defender.
+            // Calculam damage-ul brut: strength atacator - defence defender.
             $damage = max(0, $attacker->getStrength() - $defender->getDefence());
 
             // Aplicam eventualele skill-uri defensive, cum este Magic Armour.
