@@ -269,7 +269,7 @@
         <button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all">notifications</button>
         <button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all">settings</button>
         <div class="w-10 h-10 rounded-full border border-primary/20 overflow-hidden">
-            <img alt="Commander Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqRud1VIfJy-TcjNERCXpDkqyBf_FmGJmPHv5TmEmpR9u9EnqyHVNomIpkbKmPFJdUwfuys5CYpkdp9B28hNJHXOm-muX_V78G--dWL2CVs2-EUzr-YghFlv-LTzMvbVMlODpXrEW54h_yCwdKkXh6wZh3kSfJ2c7LdVyQU91ixBLZV9LkNeIwdAc55Pjm5cdnvorjGMTJGHno8FEcYf-HJgqICuob4zeuvH8B9VNLL-x9E6_zSjMZxaisqoKuQCxB1tlrS5lFCFo">
+            <img alt="Commander Profile" class="w-full h-full object-cover" src="https://ui-avatars.com/api/?name=Commander&background=ffbf00&color=131313">
         </div>
     </div>
 </header>
@@ -344,7 +344,7 @@
                     <div class="absolute inset-0 z-30 pointer-events-none border-[12px] border-blue-400/60 rounded-full opacity-0 scale-75" id="shield-overlay"></div>
                     <!-- Damage Flash Overlay -->
                     <div class="absolute inset-0 z-40 pointer-events-none opacity-0" id="hero-flash"></div>
-                    <img alt="Kratos" class="h-[500px] w-auto object-contain drop-shadow-[0_0_40px_rgba(255,191,0,0.1)] mask-image-[linear-gradient(to_bottom,black_70%,transparent_100%)]" src="https://lh3.googleusercontent.com/aida/AP1WRLv3yIqVJNzoA0xQ_yUhL6NAtd9twZwgnzh7k02gNE5Xyev3c8aeOIa0AonFa-WWzrTcfmo-NIa8EB-wDtiS7JZxhokZJgRpEQfkWPP_aT111pPK3IsdDAvGZ0EbclTCxrudd5qKLxMNdDBU1ifuQ6k0iS8FZyby5FEjcFI2zFBK-8Lni5A4lWhSblRORb7yCHJI3GXQhjOW59su8zoOr4Rp0eakmX_YcgSAG-GQEXKB8yTIti-ve5VsQpo">
+                    <img alt="Kratos" class="h-[500px] w-auto object-contain drop-shadow-[0_0_40px_rgba(255,191,0,0.1)] mask-image-[linear-gradient(to_bottom,black_70%,transparent_100%)]" src="{{ asset('kratos.png') }}">
                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center w-full">
                         <h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest drop-shadow-lg">Kratos</h2>
                         <span class="font-label-caps text-label-caps text-primary-container tracking-tighter opacity-70">CHAMPION ASCENDANT</span>
@@ -418,7 +418,7 @@
                 <div class="relative character-glow-secondary anim-idle transition-all duration-700" id="monster-card">
                     <!-- Damage Flash Overlay -->
                     <div class="absolute inset-0 z-40 pointer-events-none opacity-0" id="monster-flash"></div>
-                    <img alt="Monster" class="h-[500px] w-auto object-contain scale-x-[-1] drop-shadow-[0_0_40px_rgba(47,248,1,0.1)] mask-image-[linear-gradient(to_bottom,black_70%,transparent_100%)]" src="https://lh3.googleusercontent.com/aida/AP1WRLs9AzBDbAq0X1XO2XTxeMv07e9PT2NQXcW_iNQLl0h3drPho4XTRdRi0jk9APq--AsKEdk4cfoioCw_89_dyob_mrsrRq7Ofl_toc4tK9Xh8hRw_nNfLRhktjeXdNEft4-UY-SWLgfREpNVsAgFLtLIgWJZUDeQkQSW4boiNV31B37330Otq3k-PwA9mo4Hx_MZMcYprCx_90kJo9GurVcCvqow5mMXe_nHqREb3D4kyS_byvw4Vwhfhig">
+                    <img alt="Monster" class="h-[500px] w-auto object-contain scale-x-[-1] drop-shadow-[0_0_40px_rgba(47,248,1,0.1)] mask-image-[linear-gradient(to_bottom,black_70%,transparent_100%)]" src="{{ asset('hydra.png') }}">
                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center w-full">
                         <h2 class="font-headline-lg text-headline-lg text-secondary-fixed uppercase tracking-widest drop-shadow-lg">HYDRA</h2>
                         <span class="font-label-caps text-label-caps text-secondary-container tracking-tighter opacity-70">WILD ENTITY</span>
@@ -802,7 +802,7 @@
         } else if (monster.hp > kratos.hp) {
             winnerName = "Hydra";
             winPct = Math.round((monster.hp / monster.maxHp) * 100);
-            title.innerText = "ENTITY TRIUMPHANT";
+            title.innerText = "HYDRA WON";
             title.classList.add('text-secondary-fixed');
             badge.innerText = "SIMULATION TERMINATED";
             document.getElementById('stat-hp').innerText = winPct + '%';
